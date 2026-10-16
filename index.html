@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#160711" />
+  <meta name="description" content="Өөнөөгөөс Сарнайд зориулсан романтик болзооны урилга" />
+  <title>Сарнайд — Өөнөөгөөс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="aurora aurora-one"></div><div class="aurora aurora-two"></div>
+  <div id="petals" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero">
+      <div class="date-chip reveal">10 · 30</div>
+      <p class="eyebrow reveal">ӨӨНӨӨГӨӨС · САРНАЙД</p>
+      <div class="heart-scene reveal" aria-hidden="true">
+        <div class="orbit orbit-one"><i></i></div><div class="orbit orbit-two"><i></i></div>
+        <div class="heart"><span class="shine"></span></div>
+        <span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span>
+      </div>
+      <h1 class="reveal">Надтай нэгэн<br><em>гайхамшигтай үдшийг</em><br>өнгөрүүлэх үү?</h1>
+      <p class="lead reveal">Бидний инээд, дулаахан яриа, хамтдаа үлдээх дурсамжаас бүрдэх орой.</p>
+      <a href="#invite" class="scroll-btn reveal"><span>Урилгыг нээх</span><b>↓</b></a>
+    </section>
+
+    <section class="invitation" id="invite">
+      <div class="glass-card reveal">
+        <p class="tiny">ЗӨВХӨН ЧАМД</p>
+        <h2>Сарнай, энэ үдшийг<br><em>чи өөрөө бүтээнэ.</em></h2>
+        <p class="note">Хаана уулзах, хэдэн цагт, бас юу хийхээ чи сонгоорой. Харин би чамтай хамт байх хамгийн сайхан сэтгэлээ авч очно.</p>
+        <div class="details">
+          <article><span>01</span><small>ХЭЗЭЭ</small><strong>10-р сарын 30</strong></article>
+          <article><span>02</span><small>ХЭДЭН ЦАГТ</small><strong>Чиний сонголт</strong></article>
+          <article><span>03</span><small>ХААНА</small><strong>Чиний дуртай газар</strong></article>
+          <article><span>04</span><small>ЮУ ХИЙХ</small><strong>Чиний хүссэн бүхэн</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise">
+      <p class="script reveal">Нэг л хүсэлт байна...</p>
+      <h2 class="reveal">Надад ердөө<br><em>“Тийм”</em> гэж хэлээрэй.</h2>
+      <div class="response reveal">
+        <button id="yesBtn" class="yes">Тийм ээ, болзоё <span>♥</span></button>
+        <button id="thinkBtn" class="think">Жаахан эрхэлье</button>
+      </div>
+      <p id="hint" class="hint"></p>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" id="closeBtn" aria-label="Хаах">×</button>
+      <div class="mini-heart">♥</div>
+      <p class="tiny">БИДНИЙ БОЛЗОО</p>
+      <h2>10-р сарын 30-нд<br><em>уулзъя, Сарнай.</em></h2>
+      <p>Цаг, газар, төлөвлөгөөгөө Өөнөөд хэлээрэй. Тэр мөчөөс эхлээд энэ үдэш биднийх. 🤍</p>
+      <div class="signature">Чамайг хүлээх — Өөнөө</div>
+    </div>
+    <div class="confetti" id="confetti"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
